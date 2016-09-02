@@ -21,7 +21,10 @@ describe "CoinChanger" do
     assert_equal [3, 1, 0, 0], change(8)
   end
 
-  # returns 0-2 dimes
+  it "returns 0-2 dimes" do
+    assert_equal [0, 0, 1, 0], change(10)
+    assert_equal [0, 0, 2, 0], change(20)
+  end
 
   # After I get one dime I should get a mix of nickels and pennies along with the
   # dime before I get to 20 cents
