@@ -1,28 +1,34 @@
 class RomanNumeralifier
   def numeralify(number)
     numeral = ""
-    if number == 1000
-      return "M"
+    while number > 999
+      numeral += "M"
+      number -= 1000
     end
 
-    if number == 900
-      return "CM"
+    if number > 899
+      numeral += "CM"
+      number -= 900
     end
 
-    if number == 500
-      return "D"
+    if number > 499
+      numeral += "D"
+      number -= 500
     end
 
-    if number == 400
-      return "CD"
+    if number > 399
+      numeral += "CD"
+      number -= 400
     end
 
-    if number == 100
-      return "C"
+    if number > 99
+      numeral += "C"
+      number -= 100
     end
 
-    if number == 90
-      return "XC"
+    if number > 89
+      numeral += "XC"
+      number -= 90
     end
 
     if number > 49
