@@ -16,7 +16,10 @@ describe "CoinChanger" do
 
 
   # For 6-9 cents a mixture of nickels and dimes is possible
-  # returns 1 nickel and 0-4 pennies for values 6-9
+  it "returns 1 nickel and 0-4 pennies for values 6-9" do
+    assert_equal [1, 1, 0, 0], change(6)
+    assert_equal [3, 1, 0, 0], change(8)
+  end
 
   # returns 0-2 dimes
 
