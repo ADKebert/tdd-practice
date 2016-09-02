@@ -3,7 +3,10 @@ require 'minitest/autorun'
 describe "CoinChanger" do
   # For this problem I think it's pretty easy to think about
   # the range of values for each coin when creating the tests
-  # returns between 0-4 pennies
+  it "returns between 0-4 pennies" do
+    assert_equal [1, 0, 0, 0], change(1)
+    assert_equal [4, 0, 0, 0], change(4)
+  end
 
   # returns 0-1 nickels
 
@@ -21,5 +24,5 @@ describe "CoinChanger" do
   # Intermediate values between quarters can contain all 4 coins.  Correct values
   # at this stage constitutes our acceptance condition
   # returns an appropriate mix of dimes, nickels, pennies, and quarters
-  
+
 end
