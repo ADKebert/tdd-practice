@@ -100,7 +100,10 @@ describe "RomanNumeralifier" do
     assert_equal "D", rn.numeralify(500)
   end
 
-  # should return CM for 900
+  it "should return CM for 900" do
+    rn = RomanNumeralifier.new
+    assert_equal "CM", rn.numeralify(900)
+  end
 
   # should return M for 1000
 
