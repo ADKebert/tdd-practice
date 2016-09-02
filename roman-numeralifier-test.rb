@@ -4,7 +4,11 @@
 require 'minitest/autorun'
 
 describe "RomanNumeralifier" do
-  # should return I-III for 1-3
+  it "should return I-III for 1-3" do
+    rn = RomanNumeralifier.new
+    assert_equal "I", rn.numeralify(1)
+    assert_equal "III", rn.numeralify(3)
+  end
 
   # should return IV for 4
 
