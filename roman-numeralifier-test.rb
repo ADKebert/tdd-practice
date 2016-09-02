@@ -110,5 +110,8 @@ describe "RomanNumeralifier" do
     assert_equal "M", rn.numeralify(1000)
   end
 
-  # should return MMCMXCIX for 2999
+  it "should return MMCMXCIX for 2999" do
+    rn = RomanNumeralifier.new
+    assert_equal "MMCMXCIX", rn.numeralify(2999)
+  end
 end
