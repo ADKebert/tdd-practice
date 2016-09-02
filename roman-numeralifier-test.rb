@@ -38,7 +38,11 @@ describe "RomanNumeralifier" do
     assert_equal "XIV", rn.numeralify(14)
   end
 
-  # should return XV-XVIII for 15-18
+  it "should return XV-XVIII for 15-18" do
+    rn = RomanNumeralifier.new
+    assert_equal "XV", rn.numeralify(15)
+    assert_equal "XVI", rn.numeralify(16)
+  end
 
   # should return XIX for 19
 
