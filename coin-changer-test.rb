@@ -28,7 +28,10 @@ describe "CoinChanger" do
 
   # After I get one dime I should get a mix of nickels and pennies along with the
   # dime before I get to 20 cents
-  # returns an appropriate mix of dimes, nickels, and pennies
+  it "returns an appropriate mix of dimes, nickels, and pennies" do
+    assert_equal [3, 0, 1, 0], change(13)
+    assert_equal [2, 1, 1, 0], change(17)
+  end
 
   # returns 0-3 quarters
 
