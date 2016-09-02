@@ -1,5 +1,9 @@
 class RomanNumeralifier
   def numeralify(number)
-    "I" * number
+    if number == 4
+      "IV"
+    else
+      "I" * number
+    end
   end
 end
