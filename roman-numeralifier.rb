@@ -2,8 +2,9 @@ class RomanNumeralifier
   def numeralify(number)
     numeral = ""
 
-    if number == 40
-      return "XL"
+    if number > 39
+      numeral += "XL"
+      number -= 40
     end
 
     if number > 29
