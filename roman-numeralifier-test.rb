@@ -61,7 +61,12 @@ describe "RomanNumeralifier" do
     assert_equal "XL", rn.numeralify(40)
   end
 
-  # should return XLI-XLIX for 40-49
+  it "should return XLI-XLIX for 40-49" do
+    rn = RomanNumeralifier.new
+    assert_equal "XLI", rn.numeralify(41)
+    assert_equal "XLVIII", rn.numeralify(48)
+    assert_equal "XLIX", rn.numeralify(49)
+  end
 
   # should return L for 50
 
