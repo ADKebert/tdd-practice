@@ -3,7 +3,8 @@ class RomanNumeralifier
     numeral = ""
 
     if number > 49
-      return "L"
+      numeral += "L"
+      number -= 50
     end
 
     if number > 39
