@@ -33,7 +33,10 @@ describe "CoinChanger" do
     assert_equal [2, 1, 1, 0], change(17)
   end
 
-  # returns 0-3 quarters
+  it "returns 0-3 quarters" do
+    assert_equal [0, 0, 0, 1], change(25)
+    assert_equal [0, 0, 0, 3], change(75)
+  end
 
   # Intermediate values between quarters can contain all 4 coins.  Correct values
   # at this stage constitutes our acceptance condition
