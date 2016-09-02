@@ -40,6 +40,9 @@ describe "CoinChanger" do
 
   # Intermediate values between quarters can contain all 4 coins.  Correct values
   # at this stage constitutes our acceptance condition
-  # returns an appropriate mix of dimes, nickels, pennies, and quarters
+  it "returns an appropriate mix of dimes, nickels, pennies, and quarters" do
+    assert_equal [4, 0, 2, 3], change(99)
+    assert_equal [1, 1, 1, 1], change(41)
+  end
 
 end
