@@ -44,7 +44,10 @@ describe "RomanNumeralifier" do
     assert_equal "XVI", rn.numeralify(16)
   end
 
-  # should return XIX for 19
+  it "should return XIX for 19" do
+    rn = RomanNumeralifier.new
+    assert_equal "XIX", rn.numeralify(19)
+  end
 
   # should add additional X to the front for 20 and again for 30-39
 
