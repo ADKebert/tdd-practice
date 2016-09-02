@@ -5,18 +5,13 @@ NICKEL = 5
 PENNY = 1
 
 def change(total)
-  # [total % 5, total % 25 % 10 / 5, total % 25 / 10, total / 25]
-  coins = []
-  coins[3] = total / QUARTER
-  total = total % QUARTER
+  coins = [QUARTER, DIME, NICKEL, PENNY]
+  minimum_change = []
+  
+  coins.each do |coin|
+    minimum_change.unshift total / coin
+    total = total % coin
+  end
 
-  coins[2] = total / DIME
-  total = total % DIME
-
-  coins[1] = total / NICKEL
-  total = total % NICKEL
-
-  coins[0] = total
-
-  coins
+  minimum_change
 end
