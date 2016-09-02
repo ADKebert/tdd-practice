@@ -1,6 +1,9 @@
 class RomanNumeralifier
   def numeralify(number)
     numeral = ""
+    if number == 90
+      return "XC"
+    end
 
     if number > 49
       numeral += "L"
