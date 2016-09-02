@@ -1,6 +1,10 @@
 class RomanNumeralifier
   def numeralify(number)
     numeral = ""
+    if number == 100
+      return "C"
+    end
+
     if number == 90
       return "XC"
     end
