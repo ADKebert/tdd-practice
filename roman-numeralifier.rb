@@ -1,6 +1,10 @@
 class RomanNumeralifier
   def numeralify(number)
     numeral = ""
+    if number == 400
+      return "CD"
+    end
+    
     if number == 100
       return "C"
     end
