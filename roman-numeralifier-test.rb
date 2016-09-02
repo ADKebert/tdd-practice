@@ -2,6 +2,7 @@
 # roman numeral equivalents
 
 require 'minitest/autorun'
+require_relative 'roman-numeralifier'
 
 describe "RomanNumeralifier" do
   it "should return I-III for 1-3" do
