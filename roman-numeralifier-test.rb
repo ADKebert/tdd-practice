@@ -73,7 +73,12 @@ describe "RomanNumeralifier" do
     assert_equal "L", rn.numeralify(50)
   end
 
-  # should prepend L for 51 - 89
+  it "should prepend L for 51 - 89" do
+    rn = RomanNumeralifier.new
+    assert_equal "LIII", rn.numeralify(53)
+    assert_equal "LXIV", rn.numeralify(64)
+    assert_equal "LXXXIX", rn.numeralify(89)
+  end
 
   # should return XC for 90
 
