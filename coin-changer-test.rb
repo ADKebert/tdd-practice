@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require_relative 'coin-changer'
 
 describe "CoinChanger" do
   # For this problem I think it's pretty easy to think about
