@@ -1,6 +1,8 @@
 class RomanNumeralifier
   def numeralify(number)
-    if number == 14
+    if number > 14
+      "XV" + "I" * (number - 15)
+    elsif number == 14
       "XIV"
     elsif number > 9
       "X" + "I" * (number - 10)
