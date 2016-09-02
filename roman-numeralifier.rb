@@ -1,6 +1,10 @@
 class RomanNumeralifier
   def numeralify(number)
     numeral = ""
+    if number == 1000
+      return "M"
+    end
+
     if number == 900
       return "CM"
     end
