@@ -11,7 +11,10 @@ describe "RomanNumeralifier" do
     assert_equal "III", rn.numeralify(3)
   end
 
-  # should return IV for 4
+  it "should return IV for 4" do
+    rn = RomanNumeralifier.new
+    assert_equal "IV", rn.numeralify(4)
+  end
 
   # should return V-VIII for 5-8
 
