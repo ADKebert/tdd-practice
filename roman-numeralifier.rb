@@ -41,18 +41,7 @@ class RomanNumeralifier
       number -= 40
     end
 
-    if number > 29
-      numeral += "X"
-      number -= 10
-    end
-
-    if number > 19
-      numeral += "X"
-      number -= 10
-    end
-
-
-    if number > 9
+    while number > 9
       numeral += "X"
       number -= 10
     end
