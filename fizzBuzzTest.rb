@@ -9,4 +9,8 @@ describe "FizzBuzz" do
   it "outputs 2 for 2" do
     assert_equal 2, fizzBuzz(2)
   end
+
+  it "outputs fizz for 3" do
+    assert_equal "fizz", fizzBuzz(3)
+  end
 end
