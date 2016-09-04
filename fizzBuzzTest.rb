@@ -26,4 +26,8 @@ describe "FizzBuzz" do
     assert_equal "fizz", fizzBuzz(6)
     assert_equal "fizz", fizzBuzz(9)
   end
+
+  it "outputs buzz for 10" do
+    assert_equal "buzz", fizzBuzz(10)
+  end
 end
