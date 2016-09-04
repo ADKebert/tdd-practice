@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'coin-changer'
+require_relative 'coinChanger'
 
 describe "CoinChanger" do
   # For this problem I think it's pretty easy to think about
@@ -13,7 +13,6 @@ describe "CoinChanger" do
     assert_equal [0, 0, 0, 0], change(0)
     assert_equal [0, 1, 0, 0], change(5)
   end
-
 
   # For 6-9 cents a mixture of nickels and dimes is possible
   it "returns 1 nickel and 0-4 pennies for values 6-9" do
