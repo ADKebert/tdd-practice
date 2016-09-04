@@ -1,3 +1,3 @@
 def fizzBuzz(number)
-  1
+  number
 end
