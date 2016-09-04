@@ -6,7 +6,7 @@ describe "FizzBuzz" do
     assert_equal 1, fizzBuzz(1)
   end
 
-  # it "outputs 2 for 2" do
-  #   assert_equal 2, fizzBuzz(2)
-  # end
+  it "outputs 2 for 2" do
+    assert_equal 2, fizzBuzz(2)
+  end
 end
