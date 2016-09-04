@@ -7,7 +7,7 @@ PENNY = 1
 def change(total)
   coins = [QUARTER, DIME, NICKEL, PENNY]
   minimum_change = []
-  
+
   coins.each do |coin|
     minimum_change.unshift total / coin
     total = total % coin
