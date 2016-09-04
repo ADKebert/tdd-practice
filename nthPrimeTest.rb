@@ -16,4 +16,12 @@ describe NthPrime do
   it "should return 5 for n = 3" do
     assert_equal 5, NthPrime.new.nth_prime(3)
   end
+
+  it "should return 13 for n = 6" do
+    assert_equal 13, NthPrime.new.nth_prime(6)
+  end
+
+  it "should return 5 for n = 10_001" do
+    assert_equal 104_743, NthPrime.new.nth_prime(10_001)
+  end
 end
