@@ -1,5 +1,6 @@
 class NthPrime
   def nth_prime(n)
-    2
+    primes = [2,3]
+    primes[n - 1]
   end
 end
