@@ -38,4 +38,8 @@ describe "FizzBuzz" do
   it "outputs fizzBuzz for 15" do
     assert_equal "fizzBuzz", fizzBuzz(15)
   end
+
+  it "outputs fizzBuzz for 30" do
+    assert_equal "fizzBuzz", fizzBuzz(30)
+  end
 end
