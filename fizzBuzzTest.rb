@@ -13,4 +13,12 @@ describe "FizzBuzz" do
   it "outputs fizz for 3" do
     assert_equal "fizz", fizzBuzz(3)
   end
+
+  it "outputs 4 for 4" do
+    assert_equal 4, fizzBuzz(4)
+  end
+
+  it "outputs buzz for 5" do
+    assert_equal "buzz", fizzBuzz(5)
+  end
 end
