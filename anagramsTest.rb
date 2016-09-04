@@ -21,4 +21,8 @@ describe "Anagrams" do
   it "should find all the anagrams" do
     assert_equal %w{ruof rouf oruf fuor}, anagrams("four", %w{ruof rouf tax four rake oruf fuor})
   end
+
+  it "should ignore case" do
+    assert_equal ["NOrC", "cron"], anagrams('corn', %w(corn dark Corn NOrC CORN cron park))
+  end
 end
