@@ -6,6 +6,10 @@ describe NthPrime do
   # return the nth prime number starting at 2.
 
   it "should return 2 for n = 1" do
-    assert_equal 2, nth_prime(1)
+    assert_equal 2, NthPrime.new.nth_prime(1)
+  end
+
+  it "should return 3 for n = 2" do
+    assert_equal 3, NthPrime.new.nth_prime(2)
   end
 end
