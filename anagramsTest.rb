@@ -17,4 +17,8 @@ describe "Anagrams" do
   it "shouldn't match the word itself" do
     assert_equal ["tan"], anagrams("ant", %w{hot tan ant tart})
   end
+
+  it "should find all the anagrams" do
+    assert_equal %w{ruof rouf oruf fuor}, anagrams("four", %w{ruof rouf tax four rake oruf fuor})
+  end
 end
